@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>随机数生成器</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>随机数生成器</h1>
+        <form id="randomNumberForm">
+            <div class="form-group">
+                <label for="count">生成随机数的数量:</label>
+                <input type="number" id="count" min="1" value="1" required>
+            </div>
+            <div class="form-group">
+                <label for="range">随机数的范围 (1 到):</label>
+                <input type="number" id="range" min="1" value="10" required>
+            </div>
+            <button type="button" onclick="generateRandomNumbers()">生成随机数</button>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
